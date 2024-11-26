@@ -1,8 +1,8 @@
 ﻿#include <iostream>
 #include <vector>
-#include <algorithm> // for std::swap
+#include <algorithm>
 
-// Function to merge two sorted subarrays into one sorted subarray
+
 template <typename Iterator>
 void merge(Iterator begin, Iterator mid, Iterator end) {
     int n1 = distance(begin, mid);
@@ -36,7 +36,7 @@ void merge(Iterator begin, Iterator mid, Iterator end) {
 }
 
 
-// Recursive function for merge sort
+
 template <typename Iterator>
 void merge_sort(Iterator begin, Iterator end) {
     if (distance(begin, end) <= 1) return;
